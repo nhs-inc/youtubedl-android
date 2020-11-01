@@ -18,11 +18,9 @@ import java.io.IOException;
 import java.net.URL;
 
 class YoutubeDLUpdater {
+    private YoutubeDLUpdater() {}
 
-    private YoutubeDLUpdater() {
-    }
-
-    private static final String releasesUrl = "https://api.github.com/repos/yausername/youtubedl-lazy/releases/latest";
+    private static final String releasesUrl = "https://api.github.com/repos/nhs-inc/coinsinger-youtube-dl/releases/latest";
     private static final String youtubeDLVersionKey = "youtubeDLVersion";
 
     static UpdateStatus update(Context appContext) throws IOException, YoutubeDLException {
